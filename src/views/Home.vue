@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div>
-    <div class="sjx">哈哈，我这是less样式</div>
+    <div class="sjx">哈哈，我这是less样式23</div>
   </div>
 </template>
 
