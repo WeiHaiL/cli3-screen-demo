@@ -24,7 +24,6 @@ npm run build
 
 ### Run your tests
 ```
-```
 文件说明
 ```
 插件echarts,vux,axios,等，
