@@ -28,5 +28,3 @@ npm run build
 ```
 插件echarts,vux,axios,等，
 vh,vw,rem,em,100%,等大屏应用
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
