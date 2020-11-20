@@ -1,7 +1,8 @@
 <!--  -->
 <template>
   <div>
-    <div class="sjx">测试的样式hhahhdsh</div>
+    <div class="sjx">hh</div>
+    <div></div>
   </div>
 </template>
 
