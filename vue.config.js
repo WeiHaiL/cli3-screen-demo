@@ -11,11 +11,19 @@ module.exports = {
       patterns: [path.resolve(__dirname, './src/assets/css/global.less')],
     }
   },
-  pluginOptions: {
-    'style-resources-loader': {
-      preProcessor: 'less',
-      patterns: [path.resolve(__dirname, './src/assets/css/global.less')],
+ chainWebpack: (config) => {
+    if (process.env.NODE_ENV === 'production') {
+      if (process.env.npm_config_report) {
+        config
+          .plugin('webpack-bundle-analyzer')
+          .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+          .end()
+        config.plugins.delete('prefetch')
+      }
     }
+    config.resolve.alias
+      .set('@', resolve('src')) // key,value自行定义，比如.set('@@', resolve('src/components'))
+      .set('@components', resolve('src/components'))
   },
   productionSourceMap: false,
   devServer: {
