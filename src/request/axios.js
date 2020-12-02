@@ -13,7 +13,7 @@ import { getNowFormatDate } from '@/libs/utils'
  */
 let request = axios.create({
   baseURL:
-    process.env.NODE_ENV === 'production' ? Config.baseUrl : '/szxc_jshc',
+    process.env.NODE_ENV === 'production' ? Config.baseUrl : '/nypt_jshc',
   timeout: 60000,
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
